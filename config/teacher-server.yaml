@@ -1,5 +1,5 @@
 server:
-  port: 3003
+  port: 3002
 spring:
   application:
     name: teacher-server
@@ -23,5 +23,5 @@ mybatis-plus:
 swagger:
   basePackage: com.xie.study.controller
   title: Cloud Demo
-  description: 没什么好描述
+  description: 没什么好描述111111111111
   version: 999.0
