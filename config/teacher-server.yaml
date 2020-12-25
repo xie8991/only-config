@@ -23,5 +23,5 @@ mybatis-plus:
 swagger:
   basePackage: com.xie.study.controller
   title: Cloud Demo
-  description: 没什么好描述111111111111
+  description: 没什么好描述
   version: 999.0
