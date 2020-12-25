@@ -1,0 +1,28 @@
+server:
+  port: 3001
+profiles: test
+spring:
+  application:
+    name: student-server
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8
+    username: root
+    password: admroot
+    driver-class-name: com.mysql.cj.jdbc.Driver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1.com:8761/eureka/,http://eureka2.com:8762/eureka/,http://eureka3.com:8763/eureka/
+feign:
+  hystrix:
+    enabled: true
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.xie.study.pojo
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+swagger:
+  basePackage: com.xie.study.controller
+  title: Cloud Demo
+  description: 没什么好描述
+  version: 999.0
