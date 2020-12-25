@@ -1,6 +1,5 @@
 server:
   port: 3000
-profiles: dev
 spring:
   application:
     name: student-server
